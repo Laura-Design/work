@@ -428,7 +428,7 @@ section {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 100px;
+  width: 180px;
   height: 30px;
   text-align: center;
   font-size: 12px;
@@ -1007,7 +1007,7 @@ section {
   font-family: 'Dosis', Arial, sans-serif;
   display: table-cell;
   vertical-align: middle;
-  max-width: 118px;
+  max-width: 165px;
   height: 75px;
   font-size: 14px;
   letter-spacing: 5px;
@@ -1914,6 +1914,12 @@ span.hs {
   margin-left: auto;
   margin-right: auto;
 }
+
+.list{
+  list-style-type:disc;
+}
+
+
 /* ==============================
    About section
    ============================== */
@@ -2183,6 +2189,27 @@ span.hs {
 }
 .work-item .figure p {
   padding: 5px 0;
+}
+
+.work-item .figure a.work_link{
+  font-size: 13px;
+    opacity: 1;
+    z-index: 30000;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.work-item .figure a.work_link:hover{
+  opacity: 1;
+}
+
+.work-item .figure a.work_link img{
+  width: 25px;
+  float: right;
+  bottom: 20px;
+  right: 15px;
+  position: absolute;
 }
 .figure.effect-hover img {
   -webkit-transition: -webkit-transform 0.35s, opacity 0.35s;
